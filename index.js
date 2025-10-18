@@ -17,14 +17,16 @@ var granimInstance = new Granim({
     direction: 'top-bottom',
     isPausedWhenNotInView: true,
     image : {
-        source: 'assets/cornell.jpg', //change image for intro section if desired
+        source: 'assets/cornell.jpg',
         blendingMode: 'multiply',
+        stretchMode: ['cover'], // makes sure the image covers the background
+        position: ['center', 'center']
     },
     states : {
         "default-state": {
             gradients: [
                 ['#29323c', '#485563'],
-                ['#FF6B6B', '#556270'],
+                ['#e88f8fff', '#556270'],
                 ['#80d3fe', '#7ea0c4'],
                 ['#f0ab51', '#eceba3']
             ],
@@ -32,6 +34,7 @@ var granimInstance = new Granim({
         }
     }
 });
+
 
 //BUTTON 1
 var modal1 = document.getElementById("modal1");
