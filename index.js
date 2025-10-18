@@ -12,7 +12,7 @@ typewriter
   .start()
 
 
-var granimInstance = new Granim({
+/*var granimInstance = new Granim({
     element: '#canvas-image-blending',
     direction: 'top-bottom',
     isPausedWhenNotInView: true,
@@ -31,21 +31,22 @@ var granimInstance = new Granim({
             transitionSpeed: 8000
         }
     }
-});
-// 🔧 Force the image to scale to canvas size
-var canvas = document.getElementById('canvas-image-blending');
-var ctx = canvas.getContext('2d');
-var img = new Image();
-img.src = 'assets/cornell.jpg';
-img.onload = function() {
-    canvas.width = window.innerWidth;
-    canvas.height = window.innerHeight;
-    ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
-};
-window.addEventListener('resize', function() {
-    canvas.width = window.innerWidth;
-    canvas.height = window.innerHeight;
-    ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
+});*/
+var granimInstance = new Granim({
+  element: '#canvas-image-blending',
+  direction: 'top-bottom',
+  isPausedWhenNotInView: true,
+  states: {
+    "default-state": {
+      gradients: [
+        ['#29323c', '#485563'],
+        ['#FF6B6B', '#556270'],
+        ['#80d3fe', '#7ea0c4'],
+        ['#f0ab51', '#eceba3']
+      ],
+      transitionSpeed: 8000
+    }
+  }
 });
 
 //BUTTON 1
