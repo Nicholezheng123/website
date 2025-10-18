@@ -17,16 +17,14 @@ var granimInstance = new Granim({
     direction: 'top-bottom',
     isPausedWhenNotInView: true,
     image : {
-        source: 'assets/cornell.jpg',
+        source: 'assets/cornell.jpg', //change image for intro section if desired
         blendingMode: 'multiply',
-        stretchMode: ['cover'], // makes sure the image covers the background
-        position: ['center', 'center']
     },
     states : {
         "default-state": {
             gradients: [
                 ['#29323c', '#485563'],
-                ['#e88f8fff', '#556270'],
+                ['#FF6B6B', '#556270'],
                 ['#80d3fe', '#7ea0c4'],
                 ['#f0ab51', '#eceba3']
             ],
