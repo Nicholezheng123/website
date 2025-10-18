@@ -32,7 +32,21 @@ var granimInstance = new Granim({
         }
     }
 });
-
+// 🔧 Force the image to scale to canvas size
+var canvas = document.getElementById('canvas-image-blending');
+var ctx = canvas.getContext('2d');
+var img = new Image();
+img.src = 'assets/cornell.jpg';
+img.onload = function() {
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+    ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
+};
+window.addEventListener('resize', function() {
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+    ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
+});
 
 //BUTTON 1
 var modal1 = document.getElementById("modal1");
