@@ -11,20 +11,20 @@ typewriter
   .pauseFor(3000)
   .start()
 
-/*
+
 var granimInstance = new Granim({
     element: '#canvas-image-blending',
     direction: 'top-bottom',
     isPausedWhenNotInView: true,
     image : {
-        source: 'assets/snow.jpg', //change image for intro section if desired
+        source: 'assets/cornell.jpg', //change image for intro section if desired
         blendingMode: 'multiply',
     },
     states : {
         "default-state": {
             gradients: [
                 ['#29323c', '#485563'],
-                ['#dc9595ff', '#556270'],
+                ['#dba2a2ff', '#556270'],
                 ['#80d3fe', '#7ea0c4'],
                 ['#f0ab51', '#eceba3']
             ],
@@ -32,7 +32,7 @@ var granimInstance = new Granim({
         }
     }
 });
-*/
+
 //BUTTON 1
 var modal1 = document.getElementById("modal1");
 
