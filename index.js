@@ -17,14 +17,14 @@ var granimInstance = new Granim({
     direction: 'top-bottom',
     isPausedWhenNotInView: true,
     image : {
-        source: '/assets/snow.jpg', //change image for intro section if desired
+        source: 'assets/snow.jpg', //change image for intro section if desired
         blendingMode: 'multiply',
     },
     states : {
         "default-state": {
             gradients: [
                 ['#29323c', '#485563'],
-                ['#e28585ff', '#556270'],
+                ['#dc9595ff', '#556270'],
                 ['#80d3fe', '#7ea0c4'],
                 ['#f0ab51', '#eceba3']
             ],
