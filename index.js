@@ -11,7 +11,7 @@ typewriter
   .pauseFor(3000)
   .start()
 
-
+/*
 var granimInstance = new Granim({
     element: '#canvas-image-blending',
     direction: 'top-bottom',
@@ -32,7 +32,7 @@ var granimInstance = new Granim({
         }
     }
 });
-
+*/
 //BUTTON 1
 var modal1 = document.getElementById("modal1");
 
